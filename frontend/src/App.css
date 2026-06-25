@@ -1,0 +1,128 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #213547;
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+nav button.active {
+  background: #213547;
+  color: #fff;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 360px;
+}
+
+.register-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.register-form input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.webcam-frame {
+  position: relative;
+  display: inline-block;
+  max-width: 480px;
+  width: 100%;
+}
+
+.webcam-capture video {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.webcam-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.student-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.student-list img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.attendance-list {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 480px;
+}
+
+.attendance-list th,
+.attendance-list td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.message,
+.status {
+  font-weight: 500;
+}
+
+.error {
+  color: #b00020;
+}
